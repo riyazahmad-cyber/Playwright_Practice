@@ -23,4 +23,11 @@ test('get started link', async ({ page }) => {
   }
   console.log(rev);
 
+  let age = 18;
+  age = 20;
+  console.log(age);
+  var nam = "Hello";
+  var nam = "Hi";
+  console.log(nam);
 });
+
