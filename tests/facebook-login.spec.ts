@@ -11,9 +11,9 @@ test('facebook login with dummy credentials', async ({page}) => {
   console.log('Filling the password field.');
   await page.locator('input[name="pass"]').fill('DummyPassword123');
 
-  // console.log('Clicking the Log in button.');
-  // await page.locator('button[type="submit"]').click();
+  console.log('Clicking the Log in button.');
+  await page.getByText('Log in').first().click();
 
-  // console.log('Closing Google Chrome.');
-  // await browser.close();
+  console.log('Closing Google Chrome.');
+  await page.close();
 });
